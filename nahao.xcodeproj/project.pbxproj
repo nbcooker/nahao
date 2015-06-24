@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		925250811B3A93310002E831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250801B3A93310002E831 /* AppDelegate.swift */; };
+		925250831B3A93310002E831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250821B3A93310002E831 /* ViewController.swift */; };
+		925250861B3A93310002E831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925250841B3A93310002E831 /* Main.storyboard */; };
+		925250881B3A93310002E831 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925250871B3A93310002E831 /* Images.xcassets */; };
+		9252508B1B3A93310002E831 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925250891B3A93310002E831 /* LaunchScreen.xib */; };
+		925250971B3A93310002E831 /* nahaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250961B3A93310002E831 /* nahaoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925250911B3A93310002E831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925250731B3A93310002E831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9252507A1B3A93310002E831;
+			remoteInfo = nahao;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9252507B1B3A93310002E831 /* nahao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nahao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9252507F1B3A93310002E831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925250801B3A93310002E831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		925250821B3A93310002E831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		925250851B3A93310002E831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		925250871B3A93310002E831 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9252508A1B3A93310002E831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		925250901B3A93310002E831 /* nahaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nahaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		925250951B3A93310002E831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925250961B3A93310002E831 /* nahaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nahaoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		925250781B3A93310002E831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9252508D1B3A93310002E831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		925250721B3A93310002E831 = {
+			isa = PBXGroup;
+			children = (
+				9252507D1B3A93310002E831 /* nahao */,
+				925250931B3A93310002E831 /* nahaoTests */,
+				9252507C1B3A93310002E831 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9252507C1B3A93310002E831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9252507B1B3A93310002E831 /* nahao.app */,
+				925250901B3A93310002E831 /* nahaoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9252507D1B3A93310002E831 /* nahao */ = {
+			isa = PBXGroup;
+			children = (
+				925250801B3A93310002E831 /* AppDelegate.swift */,
+				925250821B3A93310002E831 /* ViewController.swift */,
+				925250841B3A93310002E831 /* Main.storyboard */,
+				925250871B3A93310002E831 /* Images.xcassets */,
+				925250891B3A93310002E831 /* LaunchScreen.xib */,
+				9252507E1B3A93310002E831 /* Supporting Files */,
+			);
+			path = nahao;
+			sourceTree = "<group>";
+		};
+		9252507E1B3A93310002E831 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9252507F1B3A93310002E831 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		925250931B3A93310002E831 /* nahaoTests */ = {
+			isa = PBXGroup;
+			children = (
+				925250961B3A93310002E831 /* nahaoTests.swift */,
+				925250941B3A93310002E831 /* Supporting Files */,
+			);
+			path = nahaoTests;
+			sourceTree = "<group>";
+		};
+		925250941B3A93310002E831 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				925250951B3A93310002E831 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9252507A1B3A93310002E831 /* nahao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9252509A1B3A93310002E831 /* Build configuration list for PBXNativeTarget "nahao" */;
+			buildPhases = (
+				925250771B3A93310002E831 /* Sources */,
+				925250781B3A93310002E831 /* Frameworks */,
+				925250791B3A93310002E831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nahao;
+			productName = nahao;
+			productReference = 9252507B1B3A93310002E831 /* nahao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9252508F1B3A93310002E831 /* nahaoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9252509D1B3A93310002E831 /* Build configuration list for PBXNativeTarget "nahaoTests" */;
+			buildPhases = (
+				9252508C1B3A93310002E831 /* Sources */,
+				9252508D1B3A93310002E831 /* Frameworks */,
+				9252508E1B3A93310002E831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925250921B3A93310002E831 /* PBXTargetDependency */,
+			);
+			name = nahaoTests;
+			productName = nahaoTests;
+			productReference = 925250901B3A93310002E831 /* nahaoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		925250731B3A93310002E831 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "冰 刘";
+				TargetAttributes = {
+					9252507A1B3A93310002E831 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					9252508F1B3A93310002E831 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 9252507A1B3A93310002E831;
+					};
+				};
+			};
+			buildConfigurationList = 925250761B3A93310002E831 /* Build configuration list for PBXProject "nahao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 925250721B3A93310002E831;
+			productRefGroup = 9252507C1B3A93310002E831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9252507A1B3A93310002E831 /* nahao */,
+				9252508F1B3A93310002E831 /* nahaoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		925250791B3A93310002E831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925250861B3A93310002E831 /* Main.storyboard in Resources */,
+				9252508B1B3A93310002E831 /* LaunchScreen.xib in Resources */,
+				925250881B3A93310002E831 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9252508E1B3A93310002E831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		925250771B3A93310002E831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925250831B3A93310002E831 /* ViewController.swift in Sources */,
+				925250811B3A93310002E831 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9252508C1B3A93310002E831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925250971B3A93310002E831 /* nahaoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		925250921B3A93310002E831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9252507A1B3A93310002E831 /* nahao */;
+			targetProxy = 925250911B3A93310002E831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		925250841B3A93310002E831 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925250851B3A93310002E831 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		925250891B3A93310002E831 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9252508A1B3A93310002E831 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		925250981B3A93310002E831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		925250991B3A93310002E831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9252509B1B3A93310002E831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nahao/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9252509C1B3A93310002E831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nahao/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9252509E1B3A93310002E831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nahaoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nahao.app/nahao";
+			};
+			name = Debug;
+		};
+		9252509F1B3A93310002E831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nahaoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nahao.app/nahao";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		925250761B3A93310002E831 /* Build configuration list for PBXProject "nahao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925250981B3A93310002E831 /* Debug */,
+				925250991B3A93310002E831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9252509A1B3A93310002E831 /* Build configuration list for PBXNativeTarget "nahao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9252509B1B3A93310002E831 /* Debug */,
+				9252509C1B3A93310002E831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9252509D1B3A93310002E831 /* Build configuration list for PBXNativeTarget "nahaoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9252509E1B3A93310002E831 /* Debug */,
+				9252509F1B3A93310002E831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 925250731B3A93310002E831 /* Project object */;
+}
