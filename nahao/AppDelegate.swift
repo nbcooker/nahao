@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  nahao
-//
-//  Created by 冰 刘 on 15/6/24.
-//  Copyright (c) 2015年 冰 刘. All rights reserved.
-//
 
 import UIKit
 
