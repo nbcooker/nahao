@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9202B5D71B3AAE8E009EB454 /* NewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5D61B3AAE8E009EB454 /* NewController.swift */; };
+		9202B5DB1B3BEF8C009EB454 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5DA1B3BEF8C009EB454 /* DetailController.swift */; };
 		925250811B3A93310002E831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250801B3A93310002E831 /* AppDelegate.swift */; };
 		925250831B3A93310002E831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250821B3A93310002E831 /* ViewController.swift */; };
 		925250861B3A93310002E831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925250841B3A93310002E831 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9202B5D61B3AAE8E009EB454 /* NewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewController.swift; sourceTree = "<group>"; };
+		9202B5DA1B3BEF8C009EB454 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		9252507B1B3A93310002E831 /* nahao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nahao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9252507F1B3A93310002E831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925250801B3A93310002E831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				925250891B3A93310002E831 /* LaunchScreen.xib */,
 				9252507E1B3A93310002E831 /* Supporting Files */,
 				925250A01B3A938A0002E831 /* HttpController.swift */,
+				9202B5D61B3AAE8E009EB454 /* NewController.swift */,
+				9202B5DA1B3BEF8C009EB454 /* DetailController.swift */,
 			);
 			path = nahao;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9202B5D71B3AAE8E009EB454 /* NewController.swift in Sources */,
+				9202B5DB1B3BEF8C009EB454 /* DetailController.swift in Sources */,
 				925250831B3A93310002E831 /* ViewController.swift in Sources */,
 				925250811B3A93310002E831 /* AppDelegate.swift in Sources */,
 				925250A11B3A938A0002E831 /* HttpController.swift in Sources */,
@@ -413,6 +421,7 @@
 				9252509C1B3A93310002E831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9252509D1B3A93310002E831 /* Build configuration list for PBXNativeTarget "nahaoTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				9252509F1B3A93310002E831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
