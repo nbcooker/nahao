@@ -1,20 +1,26 @@
 
 import UIKit
 
-class NewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    //tableview
     @IBOutlet weak var tv: UITableView!
-
-    @IBOutlet weak var username: UITextField!
-    
-     var tableData:NSArray = NSArray()
+    //用户名
+    @IBOutlet weak var laber_username: UILabel!
+    //网络请求的数据 保存在该数组中
+    var tableData:NSArray = NSArray()
+    //图片缓存该字典中
     var imageCache = Dictionary<String,UIImage>()
+    //用户公共信息
+    var base: baseClass = baseClass()
+    //临时变量
+    var sign: String = ""
     
-    var username_vale = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.username.text = self.username_vale
+        self.sign = base.cacheGetString("sign")
+        self.laber_username.text = "你好," + self.sign
         getClassList("http://douban.fm/j/mine/playlist?channel=1")
     }
     
@@ -56,36 +62,25 @@ class NewController: UIViewController,UITableViewDataSource,UITableViewDelegate 
     }
     //请求数据
     func getClassList(url:String){
-        //let url = "http://admin.gitci.com/login/checkLogin?username=\(username)&password=\(password)";
         let URL:NSURL=NSURL(string:url)!
         let request:NSURLRequest=NSURLRequest(URL: URL)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse!,data:NSData!,error:NSError!)->Void in
             
             var jsonResult:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
             
-            //println(jsonResult)
-            if (jsonResult["song"] != nil) {
-                self.tableData = jsonResult["song"] as! NSArray
-                //println(self.tableData)
-                self.tv.reloadData()
-                
-            } 
+                //println(jsonResult)
+                if (jsonResult["song"] != nil) {
+                    self.tableData = jsonResult["song"] as! NSArray
+                    //println(self.tableData)
+                    self.tv.reloadData()
+                    
+                } 
             
-             })
+        })
     
     }
 
-//    //点击单元格返回到上一个view
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        var rowData:NSDictionary = self.channelData[indexPath.row] as! NSDictionary
-//        //        let channel_id:AnyObject = rowData["channel_id"] as AnyObject
-//        //        let channel_id:String = "channel=\(channel_id)"
-//        
-//        let channel_id:AnyObject=rowData["channel_id"] as AnyObject!
-//        let channel:String="channel=\(channel_id)"
-//        delegate?.onChangeChannel(channel)
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
+
     
     
     // UITableViewDelegate 方法，处理列表项的选中事件
