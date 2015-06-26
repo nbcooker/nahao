@@ -1,0 +1,9 @@
+
+
+
+	1 页面布局
+	2 接收表单参数  判断用alert弹出
+	3 用http的get或者post方式获取网络数据
+	4 页面跳转以及页面传值
+	5 tableView的基本运用 将网络数据reload到tableView上 以及点击每行页面跳转以及传值
+	6 layout 自适应
