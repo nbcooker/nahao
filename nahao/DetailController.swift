@@ -22,7 +22,7 @@ class DetailController: UIViewController {
         
         // 图片地址
         
-        let strUrl = itemString["picture"] as? String
+        let strUrl = itemString["image"] as? String
         
         //url
         

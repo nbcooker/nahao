@@ -13,6 +13,8 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
     var imageCache = Dictionary<String,UIImage>()
     //用户公共信息
     var base: baseClass = baseClass()
+    //封装的网络连接方法
+    var eHttp: HttpController = HttpController()
     //临时变量
     var sign: String = ""
     
@@ -21,7 +23,9 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
         self.sign = base.cacheGetString("sign")
         self.laber_username.text = "你好," + self.sign
-        getClassList("http://douban.fm/j/mine/playlist?channel=1")
+//        getClassList("http://douban.fm/j/mine/playlist?channel=1")
+        var courseList = "http://www.eduvdev.com/api/getCourseList?username="+self.sign
+        getClassList(courseList)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,15 +45,18 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let rowData:NSDictionary = self.tableData[indexPath.row] as! NSDictionary
         //println(rowData)
         cell.textLabel?.text = rowData["title"] as? String
-        cell.detailTextLabel?.text = rowData["artist"] as? String
+        //cell.detailTextLabel?.text = rowData["description"] as? String
         cell.imageView?.image = UIImage(named:"detail.jpg")
-        let url = rowData["picture"] as! String
+        var url = rowData["image"] as! String
+    
         //let image = self.imageCache[url] as?UIImage
         let image = self.imageCache[url]
         if (image == nil){
+            
             let imgURL:NSURL=NSURL(string:url)!
             let request:NSURLRequest=NSURLRequest(URL: imgURL)
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse!,data:NSData!,error:NSError!)->Void in
+
                 var img=UIImage(data:data)
                 cell.imageView?.image=img
                 self.imageCache[url]=img
@@ -68,13 +75,18 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
             
             var jsonResult:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
             
-                //println(jsonResult)
-                if (jsonResult["song"] != nil) {
-                    self.tableData = jsonResult["song"] as! NSArray
-                    //println(self.tableData)
-                    self.tv.reloadData()
-                    
-                } 
+//                println(jsonResult)
+//                if (jsonResult["song"] != nil) {
+//                    self.tableData = jsonResult["song"] as! NSArray
+//                    //println(self.tableData)
+//                    self.tv.reloadData()
+//                    
+//                } 
+            if (jsonResult["data"] != nil) {
+                self.tableData = jsonResult["data"] as! NSArray
+                //println(self.tableData)
+                self.tv.reloadData()
+            }
             
         })
     

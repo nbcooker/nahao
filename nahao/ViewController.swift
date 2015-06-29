@@ -30,8 +30,8 @@ class ViewController: UIViewController ,HttpProtocol {
     //点击提交按钮
     @IBAction func onSubmit(sender: AnyObject) {
         
-        let username = self.name.text as String
-        let password = self.pwd.text as String
+//        let username = self.name.text as String
+//        let password = self.pwd.text as String
 //                if (username.isEmpty){ //isEmpty 是Swift中的判断是否为空的方法
 //                    var alert = UIAlertView(title: "提示", message: "用户名为空", delegate: self, cancelButtonTitle: "确定")
 //                    alert.show();
@@ -81,7 +81,9 @@ class ViewController: UIViewController ,HttpProtocol {
 //            return
 //        }
         
-        let url = "http://admin.gitci.com/login/checkLogin"
+        let username = "15210674504"
+        let password = "123456"
+        let url = "http://www.eduvdev.com/api/checkLogin"
         let params = ["username" : username , "password" : password]
         
         //        self.performSegueWithIdentifier("login", sender: self) //直接跳转
@@ -91,7 +93,7 @@ class ViewController: UIViewController ,HttpProtocol {
         
         eHttp.post(url, params: params, callback: {(data: NSDictionary) -> Void in
     
-            
+            println()
             
                         var status = data["status"] as! String
                         var msg = data["msg"] as! String
@@ -101,10 +103,10 @@ class ViewController: UIViewController ,HttpProtocol {
                             self.loginBtn.setImage(UIImage(named: "login"), forState: UIControlState.Normal)
                             self.loginBtn.enabled = true
             
-//                            let alertView = UIAlertView(title: "登录提示", message: msg, delegate: nil, cancelButtonTitle: "确定")
-//                            alertView.show()
-//                            return
-                             self.performSegueWithIdentifier("xx", sender: self)
+                            let alertView = UIAlertView(title: "登录提示", message: msg, delegate: nil, cancelButtonTitle: "确定")
+                            alertView.show()
+                            return
+//                             self.performSegueWithIdentifier("xx", sender: self)
                         } else if(status == "ok") {
                             //存储cache
                             self.base.cacheSetString("sign", value: username as String)

@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="234" y="334"/>
         </scene>
-        <!--我的课表-->
+        <!--我的课程-->
         <scene sceneID="ECm-4X-D0x">
             <objects>
                 <viewController id="gKI-OA-gei" customClass="ListController" customModule="nahao" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我的课表" id="lKX-UM-wsn"/>
+                    <navigationItem key="navigationItem" title="我的课程" id="lKX-UM-wsn"/>
                     <connections>
                         <outlet property="laber_username" destination="Pwt-L3-Z5w" id="hSR-cR-6dm"/>
                         <outlet property="tv" destination="A8u-yp-e5k" id="sFv-Ie-LXh"/>
