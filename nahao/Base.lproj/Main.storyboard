@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="731" id="Gb3-73-Uzi"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="Mobile Phone" placeholder="Mobile Phone" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="loginimageEmail200x34" translatesAutoresizingMaskIntoConstraints="NO" id="FwB-VJ-Oyc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Mobile Phone" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="loginimageEmail200x34" translatesAutoresizingMaskIntoConstraints="NO" id="FwB-VJ-Oyc">
                                 <rect key="frame" x="58" y="115" width="205" height="37"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -33,7 +33,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Password" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="loginimageEmail200x34" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-8i-FdH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="loginimageEmail200x34" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-8i-FdH">
                                 <rect key="frame" x="58" y="189" width="205" height="37"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

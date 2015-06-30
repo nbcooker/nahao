@@ -3,17 +3,15 @@
 import UIKit
 
 class DetailController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
-
     
+    //tableView
     @IBOutlet weak var d_tv: UITableView!
     
     var sign : String = ""
     var base : baseClass = baseClass()
-
-    var d_tableData:NSArray = NSArray()
     
-
+    //tableView的数据
+    var d_tableData:NSArray = NSArray()
     
     //临时变量
     var itemString:NSDictionary = NSDictionary()
@@ -25,15 +23,8 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
         var course_id = itemString["id"] as? String
         self.sign = base.cacheGetString("sign")
         
-        
-        //println(self.userinfos)
         var class_url = "http://www.eduvdev.com/api/getClassList?username="+self.sign+"&course_id="+course_id!
-        //var class_url = "http://www.eduvdev.com/api/getClassList?username=15210674504&course_id=12&nickname="+escapedString!
-        //println(class_url)
         getList(class_url)
-       // println(itemString)
-
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,20 +49,21 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
     
     //请求数据
     func getList(url:String){
-        println(url)
         let URL:NSURL=NSURL(string:url)!
         let request:NSURLRequest=NSURLRequest(URL: URL)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse!,data:NSData!,error:NSError!)->Void in
             
             var jsonResult:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-
             
-            // if (jsonResult["data"] != nil) {
-            if (jsonResult["data"] != nil) {
+            var status = jsonResult["status"] as! String
+            var msg = jsonResult["msg"] as! String
+            
+            if (status == "ok") {
                 self.d_tableData = jsonResult["data"] as! NSArray
-                //println(self.d_tableData)
-                //println(self.)
                 self.d_tv.reloadData()
+            } else {
+                let alertView = UIAlertView(title: "提示", message: msg, delegate: nil, cancelButtonTitle: "确定")
+                alertView.show()
             }
             
         })
@@ -81,10 +73,8 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
     
     // UITableViewDelegate 方法，处理列表项的选中事件
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        //self.tableView!.deselectRowAtIndexPath(indexPath, animated: true)
         var itemNSDictionary = self.d_tableData[indexPath.row] as! NSDictionary
         
-        //println(itemNSDictionary)
         self.performSegueWithIdentifier("room", sender: itemNSDictionary)
     }
     
@@ -92,9 +82,7 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "room"{
             let controller = segue.destinationViewController as! RoomController
-            //println(sender)
             var ss = sender as! NSDictionary
-            //println(ss)
             controller.itemString = ss
         }
     }

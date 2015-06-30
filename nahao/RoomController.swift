@@ -4,7 +4,7 @@ import UIKit
 
 class RoomController: UIViewController {
 
-    
+    //webView
     @IBOutlet weak var myWebView: UIWebView!
     
     var userinfos:NSDictionary = NSDictionary()
@@ -21,14 +21,13 @@ class RoomController: UIViewController {
         
         var nickname = self.userinfos["username"] as! String
         
+        //中文转码一下
         var escapedString = nickname.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
 
         var room_url = itemString["studentJoinUrl"] as? String
         
-        var room_urls = room_url! + "?nickname=dd" //+ escapedString!
-        //var room_urls = "http://www.baidu.com/s?wd=dd"
-        //println(room_urls)
-        
+        var room_urls = room_url! + "?nickname=" + escapedString!
+      
         var urlobj = NSURL(string:room_urls)
         
         var request = NSURLRequest(URL:urlobj!)
