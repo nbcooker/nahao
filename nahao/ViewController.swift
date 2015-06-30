@@ -81,10 +81,10 @@ class ViewController: UIViewController ,HttpProtocol {
 //            return
 //        }
         
-        let username = "15210674504"
+        let tel = "15210674504"
         let password = "123456"
         let url = "http://www.eduvdev.com/api/checkLogin"
-        let params = ["username" : username , "password" : password]
+        let params = ["username" : tel , "password" : password]
         
         //        self.performSegueWithIdentifier("login", sender: self) //直接跳转
         //        点击之后,先讲按钮disable,更改背景图片,防止多次点击
@@ -93,7 +93,7 @@ class ViewController: UIViewController ,HttpProtocol {
         
         eHttp.post(url, params: params, callback: {(data: NSDictionary) -> Void in
     
-            println()
+           // println(data)
             
                         var status = data["status"] as! String
                         var msg = data["msg"] as! String
@@ -109,7 +109,10 @@ class ViewController: UIViewController ,HttpProtocol {
 //                             self.performSegueWithIdentifier("xx", sender: self)
                         } else if(status == "ok") {
                             //存储cache
-                            self.base.cacheSetString("sign", value: username as String)
+                            self.base.cacheSetString("sign", value: tel as String)
+                            self.base.cacheSetNSDictionary("userinfos", value: data["data"] as! NSDictionary)
+                            //println(dictionary)
+                            
                             self.performSegueWithIdentifier("xx", sender: self)
                         }
 

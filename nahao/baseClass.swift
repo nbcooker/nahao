@@ -18,4 +18,16 @@ class baseClass{
         return tmpSign!
     }
     
+    
+    func cacheSetNSDictionary(key: String,value: NSDictionary){
+        var userDefault = NSUserDefaults.standardUserDefaults()
+        userDefault.setObject(value, forKey: key)
+    }
+    
+    func cacheGetNSDictionary(key: String) -> NSDictionary{
+        var userDefault = NSUserDefaults.standardUserDefaults()
+        var temDictionary = userDefault.objectForKey(key) as! NSDictionary
+        return temDictionary
+    }
+    
 }
