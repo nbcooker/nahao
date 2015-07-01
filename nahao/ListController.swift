@@ -24,7 +24,7 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.sign = base.cacheGetString("sign")
         self.laber_username.text = "你好," + self.sign
 //        getClassList("http://douban.fm/j/mine/playlist?channel=1")
-        var courseList = "http://www.eduvdev.com/api/getCourseList?username="+self.sign
+        var courseList = "http://www.eduvtest.com/api/getCourseList?username="+self.sign
         getClassList(courseList)
     }
     
