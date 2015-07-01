@@ -206,7 +206,7 @@
         <!--Room Controller-->
         <scene sceneID="B1C-mh-u8f">
             <objects>
-                <viewController id="DC0-i1-gmc" customClass="RoomController" customModule="nahao" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="DC0-i1-gmc" customClass="RoomController" customModule="nahao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6j3-Ow-B1W"/>
                         <viewControllerLayoutGuide type="bottom" id="QXY-Xf-s8W"/>
@@ -223,12 +223,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y8j-AG-1nC" firstAttribute="top" secondItem="Gdy-RY-fXB" secondAttribute="top" id="QxE-WZ-pcu"/>
+                            <constraint firstAttribute="bottom" secondItem="y8j-AG-1nC" secondAttribute="bottom" id="V88-L1-2FN"/>
                             <constraint firstItem="y8j-AG-1nC" firstAttribute="leading" secondItem="Gdy-RY-fXB" secondAttribute="leading" id="VZc-G2-Q8Z"/>
                             <constraint firstAttribute="trailing" secondItem="y8j-AG-1nC" secondAttribute="trailing" id="aqQ-UE-Sip"/>
-                            <constraint firstItem="y8j-AG-1nC" firstAttribute="bottom" secondItem="QXY-Xf-s8W" secondAttribute="top" constant="49" id="qa5-NE-Pa0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="89T-tG-b9D"/>
+                    <navigationItem key="navigationItem" id="89T-tG-b9D">
+                        <barButtonItem key="backBarButtonItem" id="daC-ZA-jX3"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myWebView" destination="y8j-AG-1nC" id="EwB-J8-wWX"/>
                     </connections>

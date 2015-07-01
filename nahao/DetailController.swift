@@ -19,7 +19,7 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         navigationItem.title = itemString["title"] as? String
         var course_id = itemString["id"] as? String
         self.sign = base.cacheGetString("sign")

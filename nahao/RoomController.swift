@@ -17,7 +17,6 @@ class RoomController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //println(itemString)
-        
         self.userinfos = base.cacheGetNSDictionary("userinfos")
         
         var nickname = self.userinfos["username"] as! String
