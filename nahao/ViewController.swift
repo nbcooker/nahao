@@ -45,9 +45,8 @@ class ViewController: UIViewController ,HttpProtocol {
             alert1.show()
             return
         }
-        
 
-        let url = "http://www.eduvdev.com/api/checkLogin"
+        let url = "http://www.eduvtest.com/api/checkLogin"
         let params = ["username" : tel , "password" : password]
         
         // self.performSegueWithIdentifier("login", sender: self) //直接跳转

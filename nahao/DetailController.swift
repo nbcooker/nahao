@@ -23,7 +23,7 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
         var course_id = itemString["id"] as? String
         self.sign = base.cacheGetString("sign")
         
-        var class_url = "http://www.eduvdev.com/api/getClassList?username="+self.sign+"&course_id="+course_id!
+        var class_url = "http://www.eduvtest.com/api/getClassList?username="+self.sign+"&course_id="+course_id!
         getList(class_url)
     }
     
