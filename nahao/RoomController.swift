@@ -2,6 +2,7 @@
 
 import UIKit
 
+//教室页面逻辑
 class RoomController: UIViewController {
 
     //webView

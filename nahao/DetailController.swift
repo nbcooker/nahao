@@ -2,6 +2,7 @@
 
 import UIKit
 
+//我的课节页面逻辑
 class DetailController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     //tableView

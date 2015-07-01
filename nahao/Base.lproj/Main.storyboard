@@ -70,12 +70,12 @@
                         <outlet property="loginBtn" destination="Vb1-zN-nUT" id="h2K-32-X0T"/>
                         <outlet property="name" destination="FwB-VJ-Oyc" id="MIh-41-r19"/>
                         <outlet property="pwd" destination="b8n-8i-FdH" id="215-fg-Qch"/>
-                        <segue destination="NI2-MH-fNk" kind="modal" identifier="xx" id="GPw-r1-cbh"/>
+                        <segue destination="AzI-a6-q0c" kind="modal" identifier="xx" id="GPw-r1-cbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="334"/>
+            <point key="canvasLocation" x="38" y="745"/>
         </scene>
         <!--我的课程-->
         <scene sceneID="ECm-4X-D0x">
@@ -136,7 +136,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="A8u-yp-e5k" firstAttribute="bottom" secondItem="I0p-JO-euB" secondAttribute="top" id="G0B-l9-Uv7"/>
+                            <constraint firstItem="A8u-yp-e5k" firstAttribute="bottom" secondItem="I0p-JO-euB" secondAttribute="top" constant="49" id="G0B-l9-Uv7"/>
                             <constraint firstAttribute="trailing" secondItem="A8u-yp-e5k" secondAttribute="trailing" id="No8-Hs-YUG"/>
                             <constraint firstItem="A8u-yp-e5k" firstAttribute="leading" secondItem="8fi-Wv-6sr" secondAttribute="leading" id="Oig-6M-4LF"/>
                             <constraint firstItem="A8u-yp-e5k" firstAttribute="centerX" secondItem="Pwt-L3-Z5w" secondAttribute="centerX" id="bqS-Bt-RXX"/>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFx-vL-6M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="334"/>
+            <point key="canvasLocation" x="1614" y="334"/>
         </scene>
         <!--Detail Controller-->
         <scene sceneID="fr4-no-gs1">
@@ -190,7 +190,7 @@
                             <constraint firstItem="O9j-Cg-ovC" firstAttribute="top" secondItem="tEL-xJ-ndv" secondAttribute="bottom" id="Ik7-cE-U0S"/>
                             <constraint firstItem="O9j-Cg-ovC" firstAttribute="leading" secondItem="Kg9-c1-i89" secondAttribute="leading" id="SlX-8M-5q3"/>
                             <constraint firstAttribute="trailing" secondItem="O9j-Cg-ovC" secondAttribute="trailing" id="Yya-9N-i1L"/>
-                            <constraint firstItem="O9j-Cg-ovC" firstAttribute="bottom" secondItem="KfJ-em-Zsz" secondAttribute="top" id="pgc-Ul-zTN"/>
+                            <constraint firstItem="O9j-Cg-ovC" firstAttribute="bottom" secondItem="KfJ-em-Zsz" secondAttribute="top" constant="49" id="pgc-Ul-zTN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ggv-0q-ze0"/>
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRh-tL-uKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1611" y="334"/>
+            <point key="canvasLocation" x="2143" y="334"/>
         </scene>
         <!--Room Controller-->
         <scene sceneID="B1C-mh-u8f">
@@ -225,7 +225,7 @@
                             <constraint firstItem="y8j-AG-1nC" firstAttribute="top" secondItem="Gdy-RY-fXB" secondAttribute="top" id="QxE-WZ-pcu"/>
                             <constraint firstItem="y8j-AG-1nC" firstAttribute="leading" secondItem="Gdy-RY-fXB" secondAttribute="leading" id="VZc-G2-Q8Z"/>
                             <constraint firstAttribute="trailing" secondItem="y8j-AG-1nC" secondAttribute="trailing" id="aqQ-UE-Sip"/>
-                            <constraint firstItem="y8j-AG-1nC" firstAttribute="bottom" secondItem="QXY-Xf-s8W" secondAttribute="top" id="qa5-NE-Pa0"/>
+                            <constraint firstItem="y8j-AG-1nC" firstAttribute="bottom" secondItem="QXY-Xf-s8W" secondAttribute="top" constant="49" id="qa5-NE-Pa0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="89T-tG-b9D"/>
@@ -235,12 +235,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soH-8L-dDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2080" y="325.99999999999994"/>
+            <point key="canvasLocation" x="2612" y="325"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--我的课表-->
         <scene sceneID="eiz-mL-dgY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NI2-MH-fNk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的课表" image="great_wall" id="dUb-UB-x3c"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ah8-Oy-vuf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -253,10 +254,60 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8W-tM-CYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="334"/>
+            <point key="canvasLocation" x="1175" y="334"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="M1v-CS-wkS">
+            <objects>
+                <viewController id="BZO-9T-Qd4" customClass="MemberController" customModule="nahao" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qfy-KO-N1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="afh-Oc-a6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IZT-it-B4q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-GF-oYd">
+                                <rect key="frame" x="59" y="97" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="great_wall" id="lJA-bF-Aiy"/>
+                    <connections>
+                        <outlet property="m_laber" destination="tYL-GF-oYd" id="cc6-xD-E31"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwi-ON-a8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="955"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EVg-Nk-5Vu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AzI-a6-q0c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wyd-FV-Tuu">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NI2-MH-fNk" kind="relationship" relationship="viewControllers" id="97A-ij-yP6"/>
+                        <segue destination="BZO-9T-Qd4" kind="relationship" relationship="viewControllers" id="isE-BF-9a3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KtZ-lh-YSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="745"/>
         </scene>
     </scenes>
     <resources>
+        <image name="great_wall" width="25" height="25"/>
         <image name="login" width="200" height="35"/>
         <image name="login320x548" width="320" height="548"/>
         <image name="loginimageEmail200x34" width="200" height="34"/>

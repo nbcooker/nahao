@@ -1,6 +1,7 @@
 
 import Foundation
 
+//网络数据连接逻辑
 protocol HttpProtocol{
     func didRecieveResult(result: NSDictionary)
 }

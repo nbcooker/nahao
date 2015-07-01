@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9202B5D71B3AAE8E009EB454 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5D61B3AAE8E009EB454 /* ListController.swift */; };
 		9202B5DB1B3BEF8C009EB454 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5DA1B3BEF8C009EB454 /* DetailController.swift */; };
+		923101D21B43DC4E0070ABDE /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923101D11B43DC4E0070ABDE /* MemberController.swift */; };
 		925250811B3A93310002E831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250801B3A93310002E831 /* AppDelegate.swift */; };
 		925250831B3A93310002E831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925250821B3A93310002E831 /* ViewController.swift */; };
 		925250861B3A93310002E831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925250841B3A93310002E831 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		9202B5D61B3AAE8E009EB454 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		9202B5DA1B3BEF8C009EB454 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		923101D11B43DC4E0070ABDE /* MemberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		9252507B1B3A93310002E831 /* nahao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nahao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9252507F1B3A93310002E831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925250801B3A93310002E831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9202B5D61B3AAE8E009EB454 /* ListController.swift */,
 				9202B5DA1B3BEF8C009EB454 /* DetailController.swift */,
 				92E20C9C1B42395D00A214EE /* RoomController.swift */,
+				923101D11B43DC4E0070ABDE /* MemberController.swift */,
 				925250841B3A93310002E831 /* Main.storyboard */,
 				925250871B3A93310002E831 /* Images.xcassets */,
 				925250891B3A93310002E831 /* LaunchScreen.xib */,
@@ -232,6 +235,7 @@
 				9202B5DB1B3BEF8C009EB454 /* DetailController.swift in Sources */,
 				925250831B3A93310002E831 /* ViewController.swift in Sources */,
 				925250811B3A93310002E831 /* AppDelegate.swift in Sources */,
+				923101D21B43DC4E0070ABDE /* MemberController.swift in Sources */,
 				925250A11B3A938A0002E831 /* HttpController.swift in Sources */,
 				92FA48241B3CFA2400540982 /* baseClass.swift in Sources */,
 			);

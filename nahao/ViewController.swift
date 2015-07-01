@@ -2,6 +2,7 @@
 
 import UIKit
 
+//登录页面逻辑
 class ViewController: UIViewController ,HttpProtocol {
     
     //用户名

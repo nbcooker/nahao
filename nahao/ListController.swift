@@ -1,6 +1,7 @@
 
 import UIKit
 
+//我的课程列表页面逻辑
 class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     //tableview
