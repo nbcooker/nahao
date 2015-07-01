@@ -18,4 +18,17 @@ class baseClass{
         return tmpSign!
     }
     
+    //将用户数据写到字典中
+    func cacheSetNSDictionary(key: String,value: NSDictionary){
+        var userDefault = NSUserDefaults.standardUserDefaults()
+        userDefault.setObject(value, forKey: key)
+    }
+    
+    //从字典中读取用户数据
+    func cacheGetNSDictionary(key: String) -> NSDictionary{
+        var userDefault = NSUserDefaults.standardUserDefaults()
+        var temDictionary = userDefault.objectForKey(key) as! NSDictionary
+        return temDictionary
+    }
+    
 }
