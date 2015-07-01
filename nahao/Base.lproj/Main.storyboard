@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="O9j-Cg-ovC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="O9j-Cg-ovC">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -173,6 +173,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O9j-Cg-ovC" secondAttribute="trailing" id="7P7-jM-HoJ"/>
+                            <constraint firstItem="O9j-Cg-ovC" firstAttribute="top" secondItem="fGG-oj-Dkb" secondAttribute="bottom" id="9Me-iV-f2G"/>
+                            <constraint firstItem="O9j-Cg-ovC" firstAttribute="leading" secondItem="Kg9-c1-i89" secondAttribute="leading" id="a9x-4b-ea9"/>
+                            <constraint firstItem="O9j-Cg-ovC" firstAttribute="bottom" secondItem="AUq-b6-apB" secondAttribute="top" id="ea5-wZ-cii"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ggv-0q-ze0"/>
                     <connections>
@@ -196,12 +202,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-AG-1nC">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-AG-1nC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y8j-AG-1nC" secondAttribute="trailing" id="D0L-tO-G1E"/>
+                            <constraint firstItem="y8j-AG-1nC" firstAttribute="leading" secondItem="Gdy-RY-fXB" secondAttribute="leading" id="gcj-rf-48V"/>
+                            <constraint firstItem="y8j-AG-1nC" firstAttribute="top" secondItem="Gdy-RY-fXB" secondAttribute="top" id="lmc-yB-Ju7"/>
+                            <constraint firstItem="y8j-AG-1nC" firstAttribute="bottom" secondItem="Cos-VE-OOu" secondAttribute="top" id="uVz-ha-RcB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="89T-tG-b9D"/>
                     <connections>
