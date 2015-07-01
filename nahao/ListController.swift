@@ -40,12 +40,38 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "courseList")
-        let rowData:NSDictionary = self.tableData[indexPath.row] as! NSDictionary
-        cell.textLabel?.text = rowData["title"] as? String
-        //cell.detailTextLabel?.text = rowData["description"] as? String
+//        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "courseList")
+//        let rowData:NSDictionary = self.tableData[indexPath.row] as! NSDictionary
+//        cell.textLabel?.text = rowData["title"] as? String
+//        //cell.detailTextLabel?.text = rowData["description"] as? String
+//        
+//        cell.imageView?.image = UIImage(named:"detail.jpg")
+//        var url = rowData["image"] as! String
+//        let image = self.imageCache[url]
+//        if (image == nil){
+//            
+//            let imgURL:NSURL=NSURL(string:url)!
+//            
+//            let request:NSURLRequest=NSURLRequest(URL: imgURL)
+//            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse!,data:NSData!,error:NSError!)->Void in
+//
+//                var img=UIImage(data:data)
+//                cell.imageView?.image=img
+//                self.imageCache[url]=img
+//            })
+//        }else{
+//            cell.imageView?.image=image
+//        }
+//
+//        return cell
         
-        cell.imageView?.image = UIImage(named:"detail.jpg")
+        let cell = tableView.dequeueReusableCellWithIdentifier("courseList", forIndexPath: indexPath) as! UITableViewCell
+        let rowData:NSDictionary = self.tableData[indexPath.row] as! NSDictionary
+        var courseImg = cell.viewWithTag(101) as! UIImageView
+        var courseTitle = cell.viewWithTag(102) as! UILabel
+        courseImg.image = UIImage(named:"detail.jpg")
+        courseTitle.text = rowData["title"] as? String
+        
         var url = rowData["image"] as! String
         let image = self.imageCache[url]
         if (image == nil){
@@ -54,15 +80,16 @@ class ListController: UIViewController,UITableViewDataSource,UITableViewDelegate
             
             let request:NSURLRequest=NSURLRequest(URL: imgURL)
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse!,data:NSData!,error:NSError!)->Void in
-
+                
                 var img=UIImage(data:data)
-                cell.imageView?.image=img
+                courseImg.image=img
                 self.imageCache[url]=img
             })
         }else{
-            cell.imageView?.image=image
+            courseImg.image=image
         }
-
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
         return cell
     }
     

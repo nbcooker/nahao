@@ -43,6 +43,8 @@ class DetailController: UIViewController,UITableViewDataSource,UITableViewDelega
         let rowData:NSDictionary = self.d_tableData[indexPath.row] as! NSDictionary
         cell.textLabel?.text = (rowData["dates"] as! String) + "   " + (rowData["xinqi"] as! String)
         cell.detailTextLabel?.text = (rowData["start_time"] as! String) + "   " + (rowData["end_time"] as! String)
+        
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
     }
 

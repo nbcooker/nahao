@@ -28,11 +28,11 @@ class ViewController: UIViewController ,HttpProtocol {
     //点击提交按钮
     @IBAction func onSubmit(sender: AnyObject) {
         
-        let tel = self.name.text
-        let password = self.pwd.text
+//        let tel = self.name.text
+//        let password = self.pwd.text
         
-//        let tel = "15210674504"
-//        let password = "123456"
+        let tel = "15210674504"
+        let password = "123456"
         
         if (tel.isEmpty){ //isEmpty 是Swift中的判断是否为空的方法
             var alert = UIAlertView(title: "提示", message: "用户名为空", delegate: self, cancelButtonTitle: "确定")
