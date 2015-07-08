@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714FED851B4BC61B0039C51A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925250871B3A93310002E831 /* Images.xcassets */; };
 		9202B5D71B3AAE8E009EB454 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5D61B3AAE8E009EB454 /* ListController.swift */; };
 		9202B5DB1B3BEF8C009EB454 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202B5DA1B3BEF8C009EB454 /* DetailController.swift */; };
 		923101D21B43DC4E0070ABDE /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923101D11B43DC4E0070ABDE /* MemberController.swift */; };
@@ -220,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714FED851B4BC61B0039C51A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +298,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -340,7 +342,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -364,9 +366,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = nahao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8986036e-355c-41c4-8456-d31fce8465a0";
 			};
 			name = Debug;
 		};
@@ -374,9 +380,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = nahao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8986036e-355c-41c4-8456-d31fce8465a0";
 			};
 			name = Release;
 		};
@@ -395,6 +404,7 @@
 				INFOPLIST_FILE = nahaoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8986036e-355c-41c4-8456-d31fce8465a0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nahao.app/nahao";
 			};
 			name = Debug;
@@ -410,6 +420,7 @@
 				INFOPLIST_FILE = nahaoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8986036e-355c-41c4-8456-d31fce8465a0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nahao.app/nahao";
 			};
 			name = Release;

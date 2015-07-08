@@ -11,9 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0D38E8A7B106077D031550C3FBB787700920C4BD</key>
-		<string>https://github.com/91xcode/nahao.git</string>
-		<key>2A0DAEB0B7E54D25FF15CEB1B36211123FD2A43C</key>
-		<string>https://github.com/woooowen/Top4Swift.git</string>
+		<string>https://github.com/nbcooker/nahao.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>nahao.xcodeproj</string>
@@ -21,11 +19,9 @@
 	<dict>
 		<key>0D38E8A7B106077D031550C3FBB787700920C4BD</key>
 		<string>../..</string>
-		<key>2A0DAEB0B7E54D25FF15CEB1B36211123FD2A43C</key>
-		<string>../../../Top4Swift</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/91xcode/nahao.git</string>
+	<string>https://github.com/nbcooker/nahao.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -39,14 +35,6 @@
 			<string>0D38E8A7B106077D031550C3FBB787700920C4BD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>nahao</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2A0DAEB0B7E54D25FF15CEB1B36211123FD2A43C</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Top4Swift</string>
 		</dict>
 	</array>
 </dict>

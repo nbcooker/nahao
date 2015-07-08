@@ -32,7 +32,7 @@ class ViewController: UIViewController ,HttpProtocol {
 //        let tel = self.name.text
 //        let password = self.pwd.text
         
-        let tel = "15210674504"
+        let tel = "13811261234"
         let password = "123456"
         
         if (tel.isEmpty){ //isEmpty 是Swift中的判断是否为空的方法
@@ -47,7 +47,7 @@ class ViewController: UIViewController ,HttpProtocol {
             return
         }
 
-        let url = "http://www.eduvtest.com/api/checkLogin"
+        let url = "http://www.17ske.com/api/checkLogin"
         let params = ["username" : tel , "password" : password]
         
         // self.performSegueWithIdentifier("login", sender: self) //直接跳转
